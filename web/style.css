@@ -1,0 +1,56 @@
+@import "@digdir/designsystemet-css/index.css";
+
+body {
+    background-color: var(--ds-color-background-default);
+    font-family: "inter", sans-serif;
+    color: var(--ds-color-text-default);
+
+}
+header {
+    margin: 0 auto;
+	display: flex;
+	width: 100%;
+	gap: var(--ds-size-4);
+	flex-wrap: wrap;
+	justify-content: space-between;
+	padding-block: var(--ds-size-6);
+	padding-inline: var(--ds-size-4);
+}
+h1 {
+    margin: 0 auto;
+}
+
+
+.formcard {
+    /*max-width: 36rem;*/
+    display: grid;
+    margin: 0 auto;
+    padding: 1.5rem;
+    background-color: var(--ds-color-background-tinted);
+    align-items: center;
+    flex-direction: column;
+    border-radius: 1rem;
+    gap: var(--ds-size-4);
+   
+
+}
+
+.cardsection {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    margin-bottom: var(--ds-size-10);
+    gap: var(--ds-size-6)
+
+}
+
+.container {
+  max-width: 72rem;     /* eller 960px, 72rem osv */
+  margin-inline: auto;   /* sentrerer horisontalt */
+  padding-inline: 1rem;  /* luft mot kantene */
+}
+
+.ds-card {
+    display: grid;
+    grid-template-rows: auto, 1fr, auto;
+}
+

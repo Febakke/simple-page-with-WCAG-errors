@@ -1,0 +1,468 @@
+{
+  "color": {
+    "main-color-2": {
+      "1": {
+        "$type": "color",
+        "$value": "{wcag-errors.main-color-2.1}"
+      },
+      "2": {
+        "$type": "color",
+        "$value": "{wcag-errors.main-color-2.2}"
+      },
+      "3": {
+        "$type": "color",
+        "$value": "{wcag-errors.main-color-2.3}"
+      },
+      "4": {
+        "$type": "color",
+        "$value": "{wcag-errors.main-color-2.4}"
+      },
+      "5": {
+        "$type": "color",
+        "$value": "{wcag-errors.main-color-2.5}"
+      },
+      "6": {
+        "$type": "color",
+        "$value": "{wcag-errors.main-color-2.6}"
+      },
+      "7": {
+        "$type": "color",
+        "$value": "{wcag-errors.main-color-2.7}"
+      },
+      "8": {
+        "$type": "color",
+        "$value": "{wcag-errors.main-color-2.8}"
+      },
+      "9": {
+        "$type": "color",
+        "$value": "{wcag-errors.main-color-2.9}"
+      },
+      "10": {
+        "$type": "color",
+        "$value": "{wcag-errors.main-color-2.10}"
+      },
+      "11": {
+        "$type": "color",
+        "$value": "{wcag-errors.main-color-2.11}"
+      },
+      "12": {
+        "$type": "color",
+        "$value": "{wcag-errors.main-color-2.12}"
+      },
+      "13": {
+        "$type": "color",
+        "$value": "{wcag-errors.main-color-2.13}"
+      },
+      "14": {
+        "$type": "color",
+        "$value": "{wcag-errors.main-color-2.14}"
+      },
+      "15": {
+        "$type": "color",
+        "$value": "{wcag-errors.main-color-2.15}"
+      },
+      "16": {
+        "$type": "color",
+        "$value": "{wcag-errors.main-color-2.16}"
+      }
+    },
+    "neutral": {
+      "1": {
+        "$type": "color",
+        "$value": "{wcag-errors.neutral.1}"
+      },
+      "2": {
+        "$type": "color",
+        "$value": "{wcag-errors.neutral.2}"
+      },
+      "3": {
+        "$type": "color",
+        "$value": "{wcag-errors.neutral.3}"
+      },
+      "4": {
+        "$type": "color",
+        "$value": "{wcag-errors.neutral.4}"
+      },
+      "5": {
+        "$type": "color",
+        "$value": "{wcag-errors.neutral.5}"
+      },
+      "6": {
+        "$type": "color",
+        "$value": "{wcag-errors.neutral.6}"
+      },
+      "7": {
+        "$type": "color",
+        "$value": "{wcag-errors.neutral.7}"
+      },
+      "8": {
+        "$type": "color",
+        "$value": "{wcag-errors.neutral.8}"
+      },
+      "9": {
+        "$type": "color",
+        "$value": "{wcag-errors.neutral.9}"
+      },
+      "10": {
+        "$type": "color",
+        "$value": "{wcag-errors.neutral.10}"
+      },
+      "11": {
+        "$type": "color",
+        "$value": "{wcag-errors.neutral.11}"
+      },
+      "12": {
+        "$type": "color",
+        "$value": "{wcag-errors.neutral.12}"
+      },
+      "13": {
+        "$type": "color",
+        "$value": "{wcag-errors.neutral.13}"
+      },
+      "14": {
+        "$type": "color",
+        "$value": "{wcag-errors.neutral.14}"
+      },
+      "15": {
+        "$type": "color",
+        "$value": "{wcag-errors.neutral.15}"
+      },
+      "16": {
+        "$type": "color",
+        "$value": "{wcag-errors.neutral.16}"
+      }
+    },
+    "info": {
+      "1": {
+        "$type": "color",
+        "$value": "{wcag-errors.info.1}"
+      },
+      "2": {
+        "$type": "color",
+        "$value": "{wcag-errors.info.2}"
+      },
+      "3": {
+        "$type": "color",
+        "$value": "{wcag-errors.info.3}"
+      },
+      "4": {
+        "$type": "color",
+        "$value": "{wcag-errors.info.4}"
+      },
+      "5": {
+        "$type": "color",
+        "$value": "{wcag-errors.info.5}"
+      },
+      "6": {
+        "$type": "color",
+        "$value": "{wcag-errors.info.6}"
+      },
+      "7": {
+        "$type": "color",
+        "$value": "{wcag-errors.info.7}"
+      },
+      "8": {
+        "$type": "color",
+        "$value": "{wcag-errors.info.8}"
+      },
+      "9": {
+        "$type": "color",
+        "$value": "{wcag-errors.info.9}"
+      },
+      "10": {
+        "$type": "color",
+        "$value": "{wcag-errors.info.10}"
+      },
+      "11": {
+        "$type": "color",
+        "$value": "{wcag-errors.info.11}"
+      },
+      "12": {
+        "$type": "color",
+        "$value": "{wcag-errors.info.12}"
+      },
+      "13": {
+        "$type": "color",
+        "$value": "{wcag-errors.info.13}"
+      },
+      "14": {
+        "$type": "color",
+        "$value": "{wcag-errors.info.14}"
+      },
+      "15": {
+        "$type": "color",
+        "$value": "{wcag-errors.info.15}"
+      },
+      "16": {
+        "$type": "color",
+        "$value": "{wcag-errors.info.16}"
+      }
+    },
+    "success": {
+      "1": {
+        "$type": "color",
+        "$value": "{wcag-errors.success.1}"
+      },
+      "2": {
+        "$type": "color",
+        "$value": "{wcag-errors.success.2}"
+      },
+      "3": {
+        "$type": "color",
+        "$value": "{wcag-errors.success.3}"
+      },
+      "4": {
+        "$type": "color",
+        "$value": "{wcag-errors.success.4}"
+      },
+      "5": {
+        "$type": "color",
+        "$value": "{wcag-errors.success.5}"
+      },
+      "6": {
+        "$type": "color",
+        "$value": "{wcag-errors.success.6}"
+      },
+      "7": {
+        "$type": "color",
+        "$value": "{wcag-errors.success.7}"
+      },
+      "8": {
+        "$type": "color",
+        "$value": "{wcag-errors.success.8}"
+      },
+      "9": {
+        "$type": "color",
+        "$value": "{wcag-errors.success.9}"
+      },
+      "10": {
+        "$type": "color",
+        "$value": "{wcag-errors.success.10}"
+      },
+      "11": {
+        "$type": "color",
+        "$value": "{wcag-errors.success.11}"
+      },
+      "12": {
+        "$type": "color",
+        "$value": "{wcag-errors.success.12}"
+      },
+      "13": {
+        "$type": "color",
+        "$value": "{wcag-errors.success.13}"
+      },
+      "14": {
+        "$type": "color",
+        "$value": "{wcag-errors.success.14}"
+      },
+      "15": {
+        "$type": "color",
+        "$value": "{wcag-errors.success.15}"
+      },
+      "16": {
+        "$type": "color",
+        "$value": "{wcag-errors.success.16}"
+      }
+    },
+    "warning": {
+      "1": {
+        "$type": "color",
+        "$value": "{wcag-errors.warning.1}"
+      },
+      "2": {
+        "$type": "color",
+        "$value": "{wcag-errors.warning.2}"
+      },
+      "3": {
+        "$type": "color",
+        "$value": "{wcag-errors.warning.3}"
+      },
+      "4": {
+        "$type": "color",
+        "$value": "{wcag-errors.warning.4}"
+      },
+      "5": {
+        "$type": "color",
+        "$value": "{wcag-errors.warning.5}"
+      },
+      "6": {
+        "$type": "color",
+        "$value": "{wcag-errors.warning.6}"
+      },
+      "7": {
+        "$type": "color",
+        "$value": "{wcag-errors.warning.7}"
+      },
+      "8": {
+        "$type": "color",
+        "$value": "{wcag-errors.warning.8}"
+      },
+      "9": {
+        "$type": "color",
+        "$value": "{wcag-errors.warning.9}"
+      },
+      "10": {
+        "$type": "color",
+        "$value": "{wcag-errors.warning.10}"
+      },
+      "11": {
+        "$type": "color",
+        "$value": "{wcag-errors.warning.11}"
+      },
+      "12": {
+        "$type": "color",
+        "$value": "{wcag-errors.warning.12}"
+      },
+      "13": {
+        "$type": "color",
+        "$value": "{wcag-errors.warning.13}"
+      },
+      "14": {
+        "$type": "color",
+        "$value": "{wcag-errors.warning.14}"
+      },
+      "15": {
+        "$type": "color",
+        "$value": "{wcag-errors.warning.15}"
+      },
+      "16": {
+        "$type": "color",
+        "$value": "{wcag-errors.warning.16}"
+      }
+    },
+    "danger": {
+      "1": {
+        "$type": "color",
+        "$value": "{wcag-errors.danger.1}"
+      },
+      "2": {
+        "$type": "color",
+        "$value": "{wcag-errors.danger.2}"
+      },
+      "3": {
+        "$type": "color",
+        "$value": "{wcag-errors.danger.3}"
+      },
+      "4": {
+        "$type": "color",
+        "$value": "{wcag-errors.danger.4}"
+      },
+      "5": {
+        "$type": "color",
+        "$value": "{wcag-errors.danger.5}"
+      },
+      "6": {
+        "$type": "color",
+        "$value": "{wcag-errors.danger.6}"
+      },
+      "7": {
+        "$type": "color",
+        "$value": "{wcag-errors.danger.7}"
+      },
+      "8": {
+        "$type": "color",
+        "$value": "{wcag-errors.danger.8}"
+      },
+      "9": {
+        "$type": "color",
+        "$value": "{wcag-errors.danger.9}"
+      },
+      "10": {
+        "$type": "color",
+        "$value": "{wcag-errors.danger.10}"
+      },
+      "11": {
+        "$type": "color",
+        "$value": "{wcag-errors.danger.11}"
+      },
+      "12": {
+        "$type": "color",
+        "$value": "{wcag-errors.danger.12}"
+      },
+      "13": {
+        "$type": "color",
+        "$value": "{wcag-errors.danger.13}"
+      },
+      "14": {
+        "$type": "color",
+        "$value": "{wcag-errors.danger.14}"
+      },
+      "15": {
+        "$type": "color",
+        "$value": "{wcag-errors.danger.15}"
+      },
+      "16": {
+        "$type": "color",
+        "$value": "{wcag-errors.danger.16}"
+      }
+    },
+    "link": {
+      "visited": {
+        "$type": "color",
+        "$value": "{wcag-errors.link.visited}"
+      }
+    },
+    "focus": {
+      "inner-color": {
+        "$type": "color",
+        "$value": "{wcag-errors.focus.inner}"
+      },
+      "outer-color": {
+        "$type": "color",
+        "$value": "{wcag-errors.focus.outer}"
+      }
+    }
+  },
+  "font-family": {
+    "$type": "fontFamilies",
+    "$value": "{wcag-errors.font-family}"
+  },
+  "font-weight": {
+    "medium": {
+      "$type": "fontWeights",
+      "$value": "{wcag-errors.font-weight.medium}"
+    },
+    "semibold": {
+      "$type": "fontWeights",
+      "$value": "{wcag-errors.font-weight.semibold}"
+    },
+    "regular": {
+      "$type": "fontWeights",
+      "$value": "{wcag-errors.font-weight.regular}"
+    }
+  },
+  "border-radius": {
+    "1": {
+      "$type": "dimension",
+      "$value": "min({border-radius.base}*0.5,{border-radius.scale})"
+    },
+    "2": {
+      "$type": "dimension",
+      "$value": "min({border-radius.base},{border-radius.scale}*2)"
+    },
+    "3": {
+      "$type": "dimension",
+      "$value": "min({border-radius.base}*2,{border-radius.scale}*5)"
+    },
+    "4": {
+      "$type": "dimension",
+      "$value": "min({border-radius.base}*3,{border-radius.scale}*7)"
+    },
+    "5": {
+      "$type": "dimension",
+      "$value": "{border-radius.base}"
+    },
+    "6": {
+      "$type": "dimension",
+      "$value": "9999"
+    },
+    "base": {
+      "$type": "dimension",
+      "$value": "4"
+    },
+    "scale": {
+      "$type": "dimension",
+      "$value": "4"
+    }
+  }
+}

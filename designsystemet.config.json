@@ -1,0 +1,16 @@
+{
+  "$schema": "node_modules/@digdir/designsystemet/dist/config.schema.json",
+  "outDir": "./design-tokens",
+  "themes": {
+    "wcag-errors": {
+      "colors": {
+        "main": {
+          "main-color-2": "#018192"
+        },
+        "support": {},
+        "neutral": "#24272B"
+      },
+      "borderRadius": 4
+    }
+  }
+}
