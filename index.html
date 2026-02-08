@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="no">
+    <head>  
+        <meta charset="UTF-8">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+
+       
+        <title>Nyhetsbrevsentralen</title>
+      <link rel="stylesheet" crossorigin href="/assets/index-cRoaXndl.css">
+    </head>
+
+    <body>
+        <header data-color="main">
+            <div class="container">
+                <h1>Nyhetsbrevsentralen</h1>
+                <nav class="main-nav" aria-label="Hovedmeny">
+                    <a href="index.html" class="ds-link" aria-current="page">Hjem</a>
+                    <a href="omoss.html" class="ds-link" tabindex="2">Om oss</a>
+                 </nav>
+            </div>
+        </header>
+        <main>
+            <div class="container">
+                <h2>Fordeler med nyhetsbrevet</h2>
+                <div class="cardsection">
+                    <div class="ds-card" data-variant="tinted" data-color="main" style="max-width: 320px;">
+                        <h3 class="ds-heading">Oppdatert</h3>
+                        <p class="ds-paragraph" data-variant="default">
+                            Å herremin hatt så oppdatert du kommer til å bli på generiske ting
+                        </p>
+                    </div>
+                    <div class="ds-card reflow" data-variant="tinted" data-color="main" style="max-width: 320px;">
+                        <h3 class="ds-heading">Noe å prate om</h3>
+                        <p class="ds-paragraph" data-variant="default">
+                            Stopper det opp i lunsjen? Samtalen dør og stillheten ruver over dere. Slapp av, kanskje du har fått ekstremt mye kunnskap om laks i det siste nyhetsbrevet
+                        </p>
+                    </div>
+                    <div class="ds-card" data-variant="default" data-color="neutral" style="max-width: 320px;">
+                        <h3 class="ds-heading">Aldri en tom innboks igjen</h3>
+                        <p class="ds-paragraph" data-variant="default">
+                            Er det flaut å dele skjerm, med null nye meldinger i innboksen? Vi kan sende ut evig nyhetsbrev slik at du ser ekstremt opptatt ut når du deler skjerm!
+                        </p>
+                    </div>
+                </div>
+                <div class="formcard">
+                    <div class="ds-heading" data-size="large">Meld deg på!</div>
+                    <div class="ds-field">
+                        <label class="ds-label" data-weight="medium" for=":s1">Navn</label>
+                        <div class="ds-field-affixes">
+                            <input class="ds-input" type="text" autocomplete="name" id=":s1">
+                        </div>
+                    </div>
+                    <div class="ds-field">
+                        <label class="ds-label" data-weight="medium" for=":s2">Epost</label>
+                        <div class="ds-field-affixes">
+                            <input class="ds-input" type="email" autocomplete="email" id=":s5">
+                        </div>
+                    </div>
+                    <fieldset class="ds-fieldset">
+                        <legend class="ds-label">
+                            Hvor ofte ønsker du å få nyhetsbrevet
+                        </legend>
+                        <div class="ds-field">
+                            <input class="ds-input" type="radio" value="sms" name="kontakt" id=":1">
+                            <label class="ds-label" data-weight="regular" for=":1">En i minuttet</label>   
+                        </div>
+                        <div class="ds-field">
+                            <input class="ds-input" type="radio" value="sms" name="kontakt" id=":2">
+                            <label class="ds-label" data-weight="regular" for=":2">En i timen</label>
+                        </div>
+                        <div class="ds-field">
+                            <input class="ds-input" type="radio" value="sms" name="kontakt" id=":3">
+                            <label class="ds-label" data-weight="regular" for=":3">En om dagen</label>
+                        </div>
+                        <div class="ds-field">
+                            <input class="ds-input" type="radio" value="sms" name="kontakt" id=":4">
+                            <label class="ds-label" data-weight="regular" for=":4">En i uken</label>
+                        </div>
+                    </fieldset>
+                    <a href="https://no.wikipedia.org/wiki/Nyhetsbrev" class="ds-link" tabindex="-1">Les mer om hva nyhetsbrev er her (wikipedia)</a>
+                    <button class="ds-button" data-variant="primary" id="openButton" aria-label="Jeg vil gjerne melde meg på" type="button">Meld meg på</button>
+                </div>
+               
+            </div>
+            <dialog id="myDialog" class="ds-dialog">
+                <h3 class="ds-heading">Beklager, skjema nede</h3>
+                <p class="ds-paragraph">Vi har ikke fått skjema til å fungere enda. I mellomtiden kan du sende oss et brev for å melde deg på</p>
+                <button class="ds-button" data-variant="secondary" id="closeDialog" data-color="neutral">lukk</button>
+            </dialog>
+        </main>
+         <footer data-color-scheme="dark">
+                    Takk for meg
+                </footer>
+        <script>
+        const dialog = document.getElementById('myDialog');
+        const openButton = document.getElementById('openButton');
+        const closeButton = document.getElementById('closeDialog');
+
+        openButton.addEventListener('click', () => {
+        dialog.showModal();
+        });
+
+        closeButton.addEventListener('pointerdown', () => {
+        dialog.close();
+        });
+    </script>
+    </body>
+    
+</html>
+
