@@ -1,9 +1,16 @@
 @import "@digdir/designsystemet-css/index.css";
+@import "./theme/wcag-errors.css";
+
+:root {
+  --page-max: 72rem;
+  --page-gutter: 1rem;
+}
 
 body {
     background-color: var(--ds-color-background-default);
     font-family: "inter", sans-serif;
     color: var(--ds-color-text-default);
+    margin: 0;
 
 }
 header {
@@ -12,13 +19,42 @@ header {
 	width: 100%;
 	gap: var(--ds-size-4);
 	flex-wrap: wrap;
+	justify-content: left;
+	padding-block: var(--ds-size-6);
+	/*padding-inline: var(--ds-size-4);*/
+    background-color: var(--ds-color-base-default);
+    color: var(--ds-color-base-contrast-default);
+}
+
+.main-nav {
+  display: flex;
+  gap: var(--ds-size-4);
+}
+
+.main-nav > .ds-link {
+    color: var(--ds-color-base-contrast-default);
+}   
+
+footer {
+    margin: 0 auto;
+    margin-top: var(--ds-size-10);
+	display: flex;
+	width: 100%;
+	gap: var(--ds-size-4);
+	flex-wrap: wrap;
 	justify-content: space-between;
 	padding-block: var(--ds-size-6);
 	padding-inline: var(--ds-size-4);
+    background-color: var(--ds-color-background-default);
 }
-h1 {
-    margin: 0 auto;
+
+.ds-dialog > .ds-button {
+    margin-top: var(--ds-size-8);
 }
+.ds-dialog > .ds-paragraph {
+    margin-top: var(--ds-size-2);
+}
+
 
 
 .formcard {
@@ -35,22 +71,48 @@ h1 {
 
 }
 
+.formcard > .ds-button:focus-visible {
+    outline-color: lightsalmon;
+}
+
 .cardsection {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     margin-bottom: var(--ds-size-10);
-    gap: var(--ds-size-6)
+    gap: var(--ds-size-6);
+    align-items: stretch;
 
 }
 
+.cardsection > .ds-card {
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    height: 100%;
+}
+
+.cardsection > .ds-card > .ds-heading {
+  min-height: calc(2 * 1em * var(--ds-heading-md-line-height));
+}
+
+.cardsection > .ds-card > .ds-paragraph {
+  max-height: 130px;  
+  overflow: hidden;
+  
+  
+}
+
 .container {
-  max-width: 72rem;     /* eller 960px, 72rem osv */
+  width: min(100% - (2 * var(--page-gutter)), var(--page-max));
   margin-inline: auto;   /* sentrerer horisontalt */
-  padding-inline: 1rem;  /* luft mot kantene */
+  /*padding-inline: 1rem;  /* luft mot kantene */
 }
 
 .ds-card {
     display: grid;
-    grid-template-rows: auto, 1fr, auto;
+    grid-template-rows: auto 1fr auto;
 }
 
+.reflow {
+    max-height: 60vh;
+    overflow: hidden;
+}
