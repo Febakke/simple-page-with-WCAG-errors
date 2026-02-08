@@ -5,13 +5,12 @@ export default defineConfig({
   root: 'web',
   base: '/simple-page-with-WCAG-errors/',
   build: {
-    target: "esnext",
     outDir: '../dist',
     emptyOutDir: true,
     rollupOptions: {
       input: {
-        index: resolve(__dirname, "index.html"),
-        omoss: resolve(__dirname, "omoss.html")
+        index: resolve(__dirname, "web/index.html"),
+        omoss: resolve(__dirname, "web/omoss.html")
       },
       output: {
         manualChunks: {}, 
