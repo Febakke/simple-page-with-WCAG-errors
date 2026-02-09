@@ -13,6 +13,14 @@ body {
     margin: 0;
 
 }
+
+svg {
+    height: var(--ds-size-18);
+    width: auto;
+}
+
+
+
 header {
     margin: 0 auto;
 	display: flex;
@@ -48,6 +56,30 @@ footer {
     background-color: var(--ds-color-background-default);
 }
 
+img {
+    border-radius: var(--ds-border-radius-xl);
+    outline: 10px solid var(--ds-color-border-strong);
+    outline-offset: -10px;
+    width: 100%;
+    margin-top: var(--ds-size-6);
+}
+
+icon-leisegbrev.largeicon svg {
+    height: 11em;
+    width: auto;
+    display:block;
+    margin-inline: auto;
+    margin-bottom: var(--ds-size-4);
+}
+
+icon-smilbrev.largeicon svg {
+    height: 11em;
+    width: auto;
+    display:block;
+    margin-inline: auto;
+    margin-bottom: var(--ds-size-4);
+}
+
 .ds-dialog > .ds-button {
     margin-top: var(--ds-size-8);
 }
@@ -55,7 +87,11 @@ footer {
     margin-top: var(--ds-size-2);
 }
 
-
+.iconheading {
+    display:flex;
+    align-items: center;
+    gap: var(--ds-size-2);
+}
 
 .formcard {
     /*max-width: 36rem;*/
@@ -115,4 +151,55 @@ footer {
 .reflow {
     max-height: 60vh;
     overflow: hidden;
+}
+
+.textbox {
+    background-color: var(--ds-color-surface-tinted);
+    border-radius: var(--ds-border-radius-xl);
+    padding: var(--ds-size-6);
+    /*margin-top: var(--ds-size-6); */
+}
+
+.textblock {
+    padding-bottom: var(--ds-size-6);
+}
+
+.greenheading {
+    color: #0DA06C;
+}
+
+.yellowheading {
+    color: #7BA00D;
+}
+
+.blueheading {
+    color: #817BF8;
+}
+
+.lowcontrast {
+    background-color: var(--ds-color-surface-hover);
+    color: var(--ds-color-border-subtle)
+}
+
+mark {
+    background-color: var(--ds-color-base-default);
+    color: var(--ds-color-text-default);
+    border-radius: var(--ds-border-radius-sm);
+    padding-left: var(--ds-size-1);
+    padding-right: var(--ds-size-1);
+}
+
+.lowcontrastinput {
+    border-color: var(--ds-color-border-subtle);
+
+}
+
+h2.ds-heading {
+    margin-top: var(--ds-size-4);
+    margin-bottom: var(--ds-size-4);
+    
+}
+div.ds-heading {
+    margin-top: var(--ds-size-4);
+    margin-bottom: var(--ds-size-4);
 }

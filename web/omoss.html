@@ -1,12 +1,12 @@
 <!DOCTYPE html>
-<html lang="no">
+<html lang="en">
     <head>  
         <meta charset="UTF-8">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
 
-       
+        <script src="svg.js"></script>
         <link rel="stylesheet" href="style.css">
         <title>Nyhetsbrevsentralen</title>
  
@@ -15,7 +15,10 @@
     <body>
         <header data-color="main">
             <div class="container">
-                <h1>Nyhetsbrevsentralen</h1>
+                <div class="iconheading">
+                <h1 class="ds-heading" data-size="xl">Nyhetsbrevsentralen</h1>
+                <icon-postkasse></icon-postkasse>
+                </div>
                 <nav class="main-nav" aria-label="Hovedmeny">
                     <a href="index.html" class="ds-link">Hjem</a>
                     <a href="omoss.html" class="ds-link" aria-current="page">Om oss</a>
@@ -24,13 +27,78 @@
         </header>
         <main>
             <div class="container">
-                <h2>Om oss</h2>
+                <h2 class="ds-heading" data-size="lg">Om oss</h2>
+                <div class="textbox">
+                    <div class="textblock">
+                    
+                    <h3 class="ds-heading greenheading" data-size="sm">info</h3>
+                        <p class="ds-paragraph">
+                        Vi sender e-post.
+                        Ikke fordi du må, ikke fordi du burde – men fordi du vil.
+                        Vår eneste tjeneste er et nyhetsbrev med tilfeldig informasjon, sendt til mennesker som helt frivillig har meldt seg på for å motta mer e-post i innboksen sin. Ingen kampanjer, ingen optimalisering, ingen skjult agenda.
+                        Bare e-post.
+                        </p>
+                        </div>
+                        <div class="textblock">
+                            <h3 class="ds-heading yellowheading" data-size="sm">mer info</h3>
+                            <p class="ds-paragraph">
+                            Det varierer.
+                            Noen ganger er det en observasjon.
+                            Andre ganger et faktum.
+                            Av og til noe helt unyttig.
+                            Innholdet er ikke personlig tilpasset, ikke spesielt aktuelt og sjelden kritisk viktig. Det er rett og slett informasjon som finnes, og som nå også finnes i innboksen din.
+                            </p>
+                        </div>
+                        <div class="textblock">
+                            <h3 class="ds-heading blueheading" data-size="sm">mer info</h3>
+                            <p class="ds-paragraph">
+                            Fordi ikke all e-post trenger et formål utover å eksistere.
+                            I en verden full av produktoppdateringer, påminnelser og <mark>“bare en rask ting”</mark>, ønsket vi å lage noe for dem som tenker:
+                            <mark>«Jeg kunne hatt én e-post til.»</mark>
+                            </p>
+                        </div>
+                        <button class="ds-button lowcontrast" id="openunsub">meld deg av</button>
+                </div>
                 
+                    <img src="img/wonderlane-office2.jpg">
+                    <p class="ds-paragraph"><strong>FOTO:</strong> Et bilde fra kontoret vårt</p>
+                    <img src="img/marissa-lewis-office1.jpg" alt="Bilde av vår grunnlegger og leder, post-malone">
+                    <p class="ds-paragraph"><strong>FOTO:</strong> Et annet bilde fra kontoret vårt</p>
+                  
+            </div>    
+            <dialog id="unsub" class="ds-dialog">
+                
+                <fieldset class="ds-fieldset">
+                        
+                        <legend class="ds-label">
+                            Er du helt, helt sikker?
+                        </legend>
+                        <div class="ds-field">
+                            <input class="ds-input lowcontrastinput" type="checkbox" role="radio" value="sms" name="kontakt" id=":1">
+                            <label class="ds-label" data-weight="regular" for=":1">Jeg vil skuffe alle som jobber på nyhetsbrevsentralen og melde meg av dette fantastiske nyhetsbrevet</label>   
+                        </div>
+                         <icon-leisegbrev class="largeicon"></icon-leisegbrev>
+                <button class="ds-button" data-variant="secondary" id="closeDialog" data-color="neutral">lukk</button>
+               
+            </dialog>
         </main>
          <footer data-color-scheme="dark">
-                    Takk for meg
+                    Footer info
                 </footer>
 
     </body>
+     <script>
+        const dialog = document.getElementById('unsub');
+        const openButton = document.getElementById('openunsub');
+        const closeButton = document.getElementById('closeDialog');
+
+        openButton.addEventListener('click', () => {
+        dialog.showModal();
+        });
+
+        closeButton.addEventListener('pointerdown', () => {
+        dialog.close();
+        });
+    </script>
 </html>
 
