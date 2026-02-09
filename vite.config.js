@@ -10,7 +10,7 @@ export default defineConfig({
     rollupOptions: {
       input: {
         index: resolve(__dirname, "web/index.html"),
-        omoss: resolve(__dirname, "web/omoss.html")
+        omoss: resolve(__dirname, "web/omoss.html"),
       },
       output: {
         manualChunks: {}, 

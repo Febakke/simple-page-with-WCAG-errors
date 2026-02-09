@@ -29,7 +29,7 @@ customElements.define(
 	"icon-postkasse",
 	class postkasse extends SvgIcon {
 		connectedCallback() {
-			this.loadSvg("img/postkasse.svg");
+			this.loadSvg(new URL("./img/postkasse.svg", import.meta.url).href);
 		}
 	},
 );
@@ -37,7 +37,7 @@ customElements.define(
 	"icon-smilbrev",
 	class smilbrev extends SvgIcon {
 		connectedCallback() {
-			this.loadSvg("img/smilbrev.svg");
+			this.loadSvg(new URL("./img/smilbrev.svg", import.meta.url).href);
 		}
 	},
 );
@@ -45,7 +45,7 @@ customElements.define(
 	"icon-leisegbrev",
 	class leisegbrev extends SvgIcon {
 		connectedCallback() {
-			this.loadSvg("img/leisegbrev.svg");
+			this.loadSvg(new URL("./img/leisegbrev.svg", import.meta.url).href);
 		}
 	},
 );
