@@ -6,6 +6,49 @@
   --page-gutter: 1rem;
 }
 
+@media (max-width: 600px) {
+  :root {
+    --page-gutter: 0.75rem;
+  }
+}
+
+:root,
+[data-size] {
+	--ds-md-rem: calc(16 / 18);
+	--ds-heading-2xs-font-size: calc(
+		clamp(1em, 0.9296875em + 0.3125vw, 1.125em) *
+		var(--ds-md-rem)
+	); /* 16px => 18px */
+	--ds-heading-xs-font-size: calc(
+		clamp(1.125em, 1.01953125em + 0.46875vw, 1.3125em) *
+		var(--ds-md-rem)
+	); /* 18px => 21px */
+	--ds-heading-sm-font-size: calc(
+		clamp(1.3125em, 1.20703125em + 0.46875vw, 1.5em) *
+		var(--ds-md-rem)
+	); /* 21px => 24px */
+	--ds-heading-md-font-size: calc(
+		clamp(1.5em, 1.2890625em + 0.9375vw, 1.875em) *
+		var(--ds-md-rem)
+	); /* 24px => 30px */
+	--ds-heading-lg-font-size: calc(
+		clamp(1.875em, 1.6640625em + 0.9375vw, 2.25em) *
+		var(--ds-md-rem)
+	); /* 30px => 36px */
+	--ds-heading-xl-font-size: calc(
+		clamp(2.25em, 1.96875em + 1.25vw, 2.75em) *
+		var(--ds-md-rem)
+	); /* 36px => 44px */
+	--ds-heading-2xl-font-size: calc(
+		clamp(4em, 2.1875em + 3vw, 6em) *
+		var(--ds-md-rem)
+	); /* 44px => 60px */
+
+* {
+	box-sizing: border-box;
+}
+}
+
 body {
     background-color: var(--ds-color-background-default);
     font-family: "inter", sans-serif;
@@ -41,6 +84,7 @@ header {
 
 .main-nav > .ds-link {
     color: var(--ds-color-base-contrast-default);
+    --dsc-link-background--active: none;
 }   
 
 footer {
@@ -138,9 +182,10 @@ icon-smilbrev.largeicon svg {
 }
 
 .container {
-  width: min(100% - (2 * var(--page-gutter)), var(--page-max));
-  margin-inline: auto;   /* sentrerer horisontalt */
-  /*padding-inline: 1rem;  /* luft mot kantene */
+  width: 100%;
+  max-width: var(--page-max);
+  margin-inline: auto;
+  padding-inline: var(--page-gutter);
 }
 
 .ds-card {
@@ -199,7 +244,50 @@ h2.ds-heading {
     margin-bottom: var(--ds-size-4);
     
 }
+.ds-list {
+  padding-left: 1.25rem;
+  margin: 0;
+}
+div.ds-list { padding-left: 1.25rem; }
+ul.ds-list { padding-left: 2.50rem; }
+
 div.ds-heading {
     margin-top: var(--ds-size-4);
     margin-bottom: var(--ds-size-4);
+}
+
+.fixed-width {
+	padding-inline: var(--ds-size-4);
+	width: 100%;
+}
+
+
+@media (min-width: 576px) {
+	.fixed-width {
+		max-width: 540px;
+	}
+}
+
+@media (min-width: 768px) {
+	.fixed-width {
+		max-width: 720px;
+	}
+}
+
+@media (min-width: 992px) {
+	.fixed-width {
+		max-width: 960px;
+	}
+}
+
+@media (min-width: 1200px) {
+	.fixed-width {
+		max-width: 1140px;
+	}
+}
+
+@media (min-width: 1400px) {
+	.fixed-width {
+		max-width: 1320px;
+	}
 }
